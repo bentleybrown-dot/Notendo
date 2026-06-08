@@ -7,9 +7,51 @@
   <link rel="stylesheet" href="looks.css">
 </head>
 <body>
-  <h1>Welcome to Notendo</h1>
-  <p>This page is linked to <strong>looks.css</strong> and <strong>function.js</strong>.</p>
-  <button id="actionButton">Click me</button>
+  <header class="site-header">
+    <div class="brand">Notendo</div>
+    <nav class="site-nav">
+      <a href="#">Games</a>
+      <a href="#">Switch</a>
+      <a href="#">News</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">New Release</span>
+        <h1>Play the latest adventures</h1>
+        <p>Discover exciting games, news, and exclusive content from the world of Notendo.</p>
+        <div class="hero-actions">
+          <button id="actionButton">Explore Now</button>
+          <a class="secondary-link" href="#featured">See featured</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">Featured Game</div>
+      </div>
+    </section>
+
+    <section id="featured" class="cards">
+      <article class="card">
+        <h2>Latest Games</h2>
+        <p>Find your next favorite title from adventure to action to family fun.</p>
+      </article>
+      <article class="card">
+        <h2>Switch Series</h2>
+        <p>Shop consoles, accessories, and curated editions built for every player.</p>
+      </article>
+      <article class="card">
+        <h2>Stay Connected</h2>
+        <p>Get updates on events, game releases, and special offers.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Notendo. All rights reserved.</p>
+  </footer>
 
   <script src="function.js"></script>
 </body>
