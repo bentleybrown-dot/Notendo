@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let slideInterval = updateInterval();
 
   if (pauseButton) {
-    pauseButton.textContent = String.fromCharCode(9208);\n    pauseButton.addEventListener('click', () => {\n
+    pauseButton.textContent = String.fromCharCode(9208);
+    pauseButton.addEventListener('click', () => {
       isPaused = !isPaused;
       pauseButton.textContent = isPaused ? '▶' : '⏸';
       pauseButton.classList.toggle('active', isPaused);
