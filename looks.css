@@ -159,6 +159,55 @@ main {
   box-shadow: var(--shadow);
 }
 
+.slider {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-card {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slide {
+  width: 100%;
+  min-height: 220px;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(230, 0, 18, 0.18), rgba(255, 255, 255, 0.95));
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--background);
+}
+
+.slider-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d8d8d8;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dot.active {
+  background: var(--background);
+  transform: scale(1.2);
+}
+
 .hero-copy {
   color: #1d1d1d;
 }
