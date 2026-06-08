@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  const slides = ['Page 1', 'Page 2', 'Page 3', 'Page 4'];
+  const slides = ['notendo direct 6.9.2026', 'yoshi and the mysterious book', 'final fantasy vii rebirth', 'star fox 6/25'];
   const slideElement = document.getElementById('sliderSlide');
   const dotElements = document.querySelectorAll('.slider-dots .dot');
   let currentIndex = 0;
@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let slideInterval = updateInterval();
 
   if (pauseButton) {
-    pauseButton.addEventListener('click', () => {
+    pauseButton.textContent = String.fromCharCode(9208);\n    pauseButton.addEventListener('click', () => {\n
       isPaused = !isPaused;
-      pauseButton.textContent = isPaused ? '⏸' : '▶';
+      pauseButton.textContent = isPaused ? '▶' : '⏸';
       pauseButton.classList.toggle('active', isPaused);
     });
   }
