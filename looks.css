@@ -180,7 +180,8 @@ main {
 
 .slide {
   width: 100%;
-  min-height: 220px;
+  aspect-ratio: 13.5 / 4.5;
+  min-height: auto;
   border-radius: 1.5rem;
   background: linear-gradient(135deg, rgba(230, 0, 18, 0.18), rgba(255, 255, 255, 0.95));
   display: grid;
