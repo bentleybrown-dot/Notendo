@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  const slides = ['notendo direct 6.9.2026', 'yoshi and the mysterious book', 'final fantasy vii rebirth', 'star fox 6/25'];
+  const slides = ['nintendo direct 6.9.2026', 'yoshi and the mysterious book', 'final fantasy vii rebirth', 'star fox 6/25'];
   const slideElement = document.getElementById('sliderSlide');
   const dotElements = document.querySelectorAll('.slider-dots .dot');
   let currentIndex = 0;
